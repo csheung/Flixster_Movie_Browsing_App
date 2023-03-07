@@ -7,23 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2788AB5E29B700CC003ABB4C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788AB5D29B700CC003ABB4C /* CollectionViewController.swift */; };
+		2788AB6029B70A15003ABB4C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788AB5F29B70A15003ABB4C /* CollectionViewCell.swift */; };
 		2798FE6329B278B80024B26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE6229B278B80024B26F /* AppDelegate.swift */; };
 		2798FE6529B278B80024B26F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE6429B278B80024B26F /* SceneDelegate.swift */; };
-		2798FE6729B278B80024B26F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE6629B278B80024B26F /* ViewController.swift */; };
+		2798FE6729B278B80024B26F /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE6629B278B80024B26F /* MoviesViewController.swift */; };
 		2798FE6A29B278B80024B26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2798FE6829B278B80024B26F /* Main.storyboard */; };
 		2798FE6C29B278B90024B26F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2798FE6B29B278B90024B26F /* Assets.xcassets */; };
 		2798FE6F29B278B90024B26F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2798FE6D29B278B90024B26F /* LaunchScreen.storyboard */; };
+		2798FE7829B27E2F0024B26F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE7729B27E2F0024B26F /* Movie.swift */; };
+		2798FE7C29B288EF0024B26F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE7B29B288EF0024B26F /* MovieCell.swift */; };
+		2798FE7F29B28DA30024B26F /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 2798FE7E29B28DA30024B26F /* Nuke */; };
+		2798FE8129B3A4560024B26F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FE8029B3A4560024B26F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2788AB5D29B700CC003ABB4C /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2788AB5F29B70A15003ABB4C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		2798FE5F29B278B80024B26F /* Flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2798FE6229B278B80024B26F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2798FE6429B278B80024B26F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2798FE6629B278B80024B26F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2798FE6629B278B80024B26F /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		2798FE6929B278B80024B26F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2798FE6B29B278B90024B26F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2798FE6E29B278B90024B26F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2798FE7029B278B90024B26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2798FE7729B27E2F0024B26F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2798FE7B29B288EF0024B26F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		2798FE8029B3A4560024B26F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2798FE7F29B28DA30024B26F /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,28 @@
 		2798FE6129B278B80024B26F /* Flixster */ = {
 			isa = PBXGroup;
 			children = (
+				2798FE7629B27E150024B26F /* Models */,
 				2798FE6229B278B80024B26F /* AppDelegate.swift */,
 				2798FE6429B278B80024B26F /* SceneDelegate.swift */,
-				2798FE6629B278B80024B26F /* ViewController.swift */,
+				2798FE6629B278B80024B26F /* MoviesViewController.swift */,
+				2798FE7B29B288EF0024B26F /* MovieCell.swift */,
+				2798FE8029B3A4560024B26F /* DetailViewController.swift */,
+				2788AB5D29B700CC003ABB4C /* CollectionViewController.swift */,
+				2788AB5F29B70A15003ABB4C /* CollectionViewCell.swift */,
 				2798FE6829B278B80024B26F /* Main.storyboard */,
 				2798FE6B29B278B90024B26F /* Assets.xcassets */,
 				2798FE6D29B278B90024B26F /* LaunchScreen.storyboard */,
 				2798FE7029B278B90024B26F /* Info.plist */,
 			);
 			path = Flixster;
+			sourceTree = "<group>";
+		};
+		2798FE7629B27E150024B26F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2798FE7729B27E2F0024B26F /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +108,9 @@
 			dependencies = (
 			);
 			name = Flixster;
+			packageProductDependencies = (
+				2798FE7E29B28DA30024B26F /* Nuke */,
+			);
 			productName = Flixster;
 			productReference = 2798FE5F29B278B80024B26F /* Flixster.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 2798FE5629B278B80024B26F;
+			packageReferences = (
+				2798FE7D29B28DA30024B26F /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 2798FE6029B278B80024B26F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2798FE6729B278B80024B26F /* ViewController.swift in Sources */,
+				2798FE6729B278B80024B26F /* MoviesViewController.swift in Sources */,
 				2798FE6329B278B80024B26F /* AppDelegate.swift in Sources */,
+				2788AB6029B70A15003ABB4C /* CollectionViewCell.swift in Sources */,
+				2798FE7829B27E2F0024B26F /* Movie.swift in Sources */,
+				2798FE8129B3A4560024B26F /* DetailViewController.swift in Sources */,
+				2788AB5E29B700CC003ABB4C /* CollectionViewController.swift in Sources */,
+				2798FE7C29B288EF0024B26F /* MovieCell.swift in Sources */,
 				2798FE6529B278B80024B26F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2798FE7D29B28DA30024B26F /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2798FE7E29B28DA30024B26F /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2798FE7D29B28DA30024B26F /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2798FE5729B278B80024B26F /* Project object */;
 }
